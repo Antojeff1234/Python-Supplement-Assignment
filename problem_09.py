@@ -2,6 +2,9 @@
 # Find and fix the error
 
 numbers = [10, 20, 30, 40, 50]
-total = sum(numbers)
-average = total / len(numbers)
-print(f"Average: {average:0f}")
+if len(numbers) == 0:
+    print("List is empty, cannot compute average.")
+else:
+    total = sum(numbers)
+    average = total / len(numbers)
+    print(f"Average: {average:0f}")
